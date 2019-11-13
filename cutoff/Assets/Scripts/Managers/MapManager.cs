@@ -78,7 +78,7 @@ public class MapManager : MonoBehaviour {
                 }
                 else if (isSuitable)
                 {
-                    if (checkedTiles[0].x == 0 || checkedTiles[0].y == 0
+                    if (checkedTiles[0].x != playerId || checkedTiles[0].y == 0
                         || checkedTiles[0].x == DEFINES.MAP_WIDTH - 1 || checkedTiles[0].y == DEFINES.MAP_HEIGHT - 1 
                         /*|| NeighboursAreNeutralOrOwnedBy(checkedTiles[0], playerId) == false*/)
                     {
